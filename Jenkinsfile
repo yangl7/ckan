@@ -5,6 +5,7 @@ pipeline {
             agent {
                 docker {
                     image 'python:2-alpine' 
+                    image 'postgres:10'
                 }
             }
             environment {
