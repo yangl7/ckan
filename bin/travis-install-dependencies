@@ -30,9 +30,9 @@ fi
 #sudo -E -u postgres ./bin/postgres_init/2_create_ckan_datastore_db.sh
 
 export PIP_USE_MIRRORS=true
-~/.pyenv/shims/pip install -r requirement-setuptools.txt --allow-all-external
-~/.pyenv/shims/pip install -r requirements.txt --allow-all-external
-~/.pyenv/shims/pip install -r dev-requirements.txt --allow-all-external
+~/.pyenv/shims/pip install -r requirement-setuptools.txt #--allow-all-external
+~/.pyenv/shims/pip install -r requirements.txt #--allow-all-external
+~/.pyenv/shims/pip install -r dev-requirements.txt #--allow-all-external
 
 python setup.py develop
 
