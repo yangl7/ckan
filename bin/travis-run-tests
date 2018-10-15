@@ -7,6 +7,7 @@ sudo service jetty restart
 
 # Run mocha front-end tests
 # We need ckan to be running for some tests
+echo $PATH
 paster serve test-core.ini &
 sleep 5 # Make sure the server has fully started
 mocha-phantomjs http://localhost:5000/base/test/index.html
